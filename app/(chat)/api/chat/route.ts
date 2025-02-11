@@ -39,7 +39,7 @@ import FirecrawlApp from '@mendable/firecrawl-js';
 
 export const config = {
   runtime: "edge",
-  maxDuration: MAX_DURATION, // 使用變數取代條件運算
+  maxDuration: 60 , // 使用變數取代條件運算
 };
 
 type AllowedTools =
