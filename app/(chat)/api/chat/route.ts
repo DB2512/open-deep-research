@@ -37,9 +37,10 @@ import {
 import { generateTitleFromUserMessage } from '../../actions';
 import FirecrawlApp from '@mendable/firecrawl-js';
 
-export const maxDuration = process.env.MAX_DURATION
-  ? parseInt(process.env.MAX_DURATION)
-  : 300;
+export const config = {
+  runtime: "edge",
+  maxDuration: MAX_DURATION, // 使用變數取代條件運算
+};
 
 type AllowedTools =
   | 'requestSuggestions'
